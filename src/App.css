@@ -1,38 +1,90 @@
+/* General styling for the app container */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling for the editor area */
+#editor {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Darker text color */
+  resize: none; /* Prevent resizing */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for the preview area */
+#preview {
+  width: 50%;
+  height: 100%;
+  border-left: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Scroll if content overflows */
+  background-color: #ffffff; /* White background */
+  color: #333; /* Darker text color */
+}
+
+/* Optional: Add some margin and padding to the body for better spacing */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5; /* Light gray background for the whole page */
+}
+
+/* Header styling */
+h1 {
+  color: #2c3e50; /* Dark blue */
+  margin: 0 0 20px 0;
+}
+
+/* Code styling */
+code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #d63384; /* Bootstrap purple */
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  color: #333; /* Darker text color */
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid #3498db; /* Blue */
+  padding-left: 15px;
+  margin: 0 0 20px 0;
+  font-style: italic;
+  color: #555; /* Dark gray text */
+}
+
+/* List styling */
+ul, ol {
+  margin: 0 0 20px 0;
+  padding-left: 20px;
+}
+
+/* Link styling */
+a {
+  color: #2980b9; /* Light blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
